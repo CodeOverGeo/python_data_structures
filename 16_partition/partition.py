@@ -19,3 +19,20 @@ def partition(lst, fn):
         >>> partition(["hi", None, 6, "bye"], is_string)
         [['hi', 'bye'], [None, 6]]
     """
+    partitioned_list = [[],[]]
+    partitioned_list[0] = [ele for ele in lst if fn(ele)];
+    partitioned_list[1] = [ele for ele in lst if not fn (ele)];
+     
+    return partitioned_list;
+
+    # optimal solution for O(n), instead of O(n^2)
+    # true_list = []
+    # false_list = []
+
+    # for val in lst:
+    #     if fn(val):
+    #         true_list.append(val)
+    #     else:
+    #         false_list.append(val)
+
+    # return [true_list, false_list]
