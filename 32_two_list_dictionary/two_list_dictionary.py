@@ -15,3 +15,10 @@ def two_list_dictionary(keys, values):
         >>> two_list_dictionary(['a', 'b', 'c'], [1, 2, 3, 4])
         {'a': 1, 'b': 2, 'c': 3}
    """
+
+    comp_dict = {}
+
+    for idx, val in enumerate(keys):
+       comp_dict[val] = values[idx] if idx < len(values) else None;
+    
+    return comp_dict
