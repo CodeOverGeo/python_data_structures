@@ -7,3 +7,7 @@ def multiple_letter_count(phrase):
         >>> multiple_letter_count('Yay')
         {'Y': 1, 'a': 1, 'y': 1}
     """
+    letter_freq  = {};
+    for letter in phrase:
+        letter_freq[letter] = letter_freq.get(letter, 0) + 1;
+    return letter_freq
