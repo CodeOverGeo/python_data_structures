@@ -10,4 +10,4 @@ def multiple_letter_count(phrase):
     letter_freq  = {};
     for letter in phrase:
         letter_freq[letter] = letter_freq.get(letter, 0) + 1;
-    return letter_freq
+    return letter_freq;
