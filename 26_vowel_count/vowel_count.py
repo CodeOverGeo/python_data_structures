@@ -7,10 +7,12 @@ def vowel_count(phrase):
         >>> vowel_count('HOW ARE YOU? i am great!') 
         {'o': 2, 'a': 3, 'e': 2, 'u': 1, 'i': 1}
     """
-    vowels = set(['a', 'e', 'i', 'o', 'u'])
+    VOWELS = set(['a', 'e', 'i', 'o', 'u'])
     vowel_freq = {}
     for char in phrase:
         lowchar = char.lower()
-        if lowchar in vowels:
+        if lowchar in VOWELS:
             vowel_freq[lowchar] = vowel_freq.get(lowchar, 0) + 1 
     return vowel_freq
+
+    #strings are iterable, could have called set on 'aeiou' instead

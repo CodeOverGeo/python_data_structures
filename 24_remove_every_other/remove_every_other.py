@@ -14,3 +14,6 @@ def remove_every_other(lst):
 
     newlst = lst[0::2]
     return newlst
+
+    # [0:end:1] syntax defaults first index to 0, don't have to state
+    # could have ran on one line

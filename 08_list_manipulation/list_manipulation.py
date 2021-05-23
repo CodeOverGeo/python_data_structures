@@ -54,3 +54,5 @@ def list_manipulation(lst, command, location, value=None):
             lst.insert(0, value);
             return lst;
     return None
+
+    #don't need to return None, functions return None by default

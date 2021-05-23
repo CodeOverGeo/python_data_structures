@@ -18,3 +18,6 @@ def sum_floats(nums):
             result = result + ele;
 
     return result;
+
+    # there's a sum function:
+    # return sum([num for num in nums if isinstance(num, float)])

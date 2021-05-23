@@ -10,3 +10,5 @@ def last_element(lst):
     if len(lst) == 0:
         return None;
     return lst[len(lst) - 1];
+
+    #don't need to return None, functions return None by default

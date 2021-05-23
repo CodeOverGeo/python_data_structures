@@ -25,3 +25,5 @@ def is_palindrome(phrase):
         return True;
     else:
         return False;
+
+#doubled up the 'phrase.replace(' ', '').lower()', could have declared it

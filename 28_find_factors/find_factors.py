@@ -18,3 +18,10 @@ def find_factors(num):
         if num % i == 0:
             factors.append(i);
     return factors
+
+    # second option:
+    # n_list = [n for n in range (1, num // 2 + 1) if num % n == 0]
+
+    # n_list.append(num)
+
+    # return n_list
